@@ -1,0 +1,167 @@
+/* MainHeader Css */
+.header{
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 2%;
+    font-family: navfont;
+    margin: 0 auto;
+}
+
+/* Add this CSS to your stylesheet */
+.headeroption {
+    /* display: none; */
+    list-style: none;
+}
+.headeroption a{
+    text-decoration: none;
+    color: white;
+}
+.headeroption li:hover{
+    list-style: outside;
+    cursor: pointer;
+}
+/* /////////////////////////////////////////////// */
+
+.headerleft{
+    display: flex;   
+    flex-wrap: wrap;
+}
+.headerleft li{
+    list-style: none;
+}
+.headerleft li a{
+    color: white;
+    text-decoration: none;
+}
+.headerleft li:hover{
+    list-style:disc;
+}
+
+.headerright{
+    display: flex;
+    flex-wrap: wrap;  
+
+}
+.headermid{
+    display: flex;
+    justify-content: space-between;
+    width: 95%;
+    margin: 0 auto;
+    font-family: headerfont;
+}
+.headermid p{
+    display: none;
+}
+.headermid h1{
+    font-size: 1.5rem;
+    letter-spacing: 12.8px;
+    display: none;
+}
+.headertop{
+    padding-bottom: 100%;
+}
+.headerul{
+    list-style: none;
+}
+.headerul a{
+    text-decoration: none;
+    color: white;
+}
+.headerul li:hover{
+    list-style: outside;
+    cursor: pointer;
+}
+li{
+    font-size: 1rem;
+}
+
+@media screen and (max-width: 1080px) {
+    .headertop{
+        padding-bottom: 0%;
+    }   
+    .header{
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 940px) {
+    
+    .header{
+        display: none;
+    }
+    .headermid p{
+        display: inline-block;
+    }
+    .headermid h1{
+        display: inline-block;
+    }
+    .headerbody h2{
+        display: none;
+    }
+}
+@media screen and (max-width: 700px) {
+    .headermid h1{
+        font-size: 1rem;
+        letter-spacing: 5px;
+        margin-top: 1rem;
+    }
+}
+
+/* ............//////////////////////........... */
+.headerContent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
+}
+.headerContentdetail1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1%;
+}
+.headerContentdetail2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1%;
+}
+.headerContent img{
+    width: 23vw;
+}
+/* detail blog css */
+#hchleft{
+    font-family: headerfont;
+    font-size: 2.5vw;
+    letter-spacing: 5px;
+    text-align: left;
+}
+#hcdleft{
+    text-align: left;
+    line-height: 1.75;
+    font-size: 1.35vw;
+}
+#hchright{
+    font-family: headerfont;
+    font-size: 2.5vw;
+    letter-spacing: 5px;
+    text-align: right;
+}
+#hcdright{
+    text-align: right;
+    line-height: 1.75;
+    font-size: 1.35vw;
+}
+
+@media screen and (max-width: 500px) {
+    #hchleft{
+        font-size: 2vw;
+        letter-spacing: 2px;
+    }
+    #hchright{
+        font-size: 2vw;
+        letter-spacing: 2px;
+    }
+}

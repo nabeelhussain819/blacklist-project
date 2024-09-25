@@ -1,0 +1,98 @@
+.cardl{
+    border-top: 2.52px solid rgba(255, 255, 255, 0.40);
+    border-bottom: 2.52px solid rgba(255, 255, 255, 0.40);
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.10) 0%, rgba(255, 255, 255, 0.05) 100%);
+    box-shadow: 0px 4px 11px 5px rgba(255, 255, 255, 0.14);
+    backdrop-filter: blur(18px);
+    width: 250px;
+    height: 300px;
+    padding: 25px 20px 130px 20px;
+    border-radius: 0%;  
+}
+.cardl img{
+    border-radius: 0%;
+}
+.cardtext{
+    display: flex;
+    justify-content: space-between;
+}
+.cardtext h3{
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-top: 30px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+}
+.cardtext p{
+    font-size: 12px;
+    color: #CBCBCB;
+}
+@media (max-width: 1150px) and (min-width:950px) {
+    .cardl{
+        width: 12rem;
+        height: 15rem;
+        padding: 25px 20px 110px 20px;
+    }
+    .cardtext h3{
+        font-size: 12px;        
+    }
+    .cardtext p{
+        font-size: 8px;
+    }
+    .cardbtn{
+        font-size: 10px;
+    }
+}
+@media (max-width: 951px) and (min-width:730px) {
+    .cardl{
+        width: 9rem;
+        height: 11rem;
+        padding: 20px 15px 100px 15px;
+    }
+    .cardtext h3{
+        font-size: 7px;        
+    }
+    .cardtext p{
+        font-size: 5px;
+    }
+    .cardbtn{
+        font-size: 10px;
+    }
+}
+@media (max-width: 731px) and (min-width:550px) {
+    .cardl{
+        width: 7rem;
+        height: 9rem;
+        padding: 15px 10px 85px 10px;
+    }
+    .cardtext h3{
+        font-size: 5px;   
+        margin-top: 10px;
+    }
+    .cardtext p{
+        font-size: 3px;
+    }
+}
+@media (max-width: 551px) and (min-width:60px) {
+    .cardl{
+        width: 4rem;
+        height: 5rem;
+        padding: 8px 8px 67px 8px;
+        border-top: 2px solid rgba(255, 255, 255, 0.40);
+        border-bottom: 2px solid rgba(255, 255, 255, 0.40);
+        box-shadow: 0px 4px 8px 5px rgba(255, 255, 255, 0.14);
+        backdrop-filter: blur(18px);
+    }
+    .cardtext h3{
+        font-size: 5px;   
+        margin-top: 5px;     
+    }
+    .cardtext p{
+        font-size: 3px;
+    }
+    .cardbtn{
+        position: absolute;
+    }
+}

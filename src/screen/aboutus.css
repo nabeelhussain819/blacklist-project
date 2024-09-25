@@ -1,0 +1,40 @@
+.about{
+    width: 80%;
+    margin: 0 auto;
+}
+.about h1{
+    font-family: headerfont;
+    font-size: 45px;
+    font-weight: 400;
+    letter-spacing: 12.8px;
+    margin-bottom: 0%;
+}
+.about h3{
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 30px;
+}
+.about p{
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px;
+}
+.about hr{
+    margin: 3% 0 3% 0;
+    border: 1px solid #5F5D5D;
+}
+@media (max-width: 500px) {
+    .about h1{
+        font-size: 4.5vw;
+        letter-spacing: 1vw;
+    }
+    .about h3{
+        font-size: 2vw;
+        line-height: 2vh;
+    }
+    .about p{
+        font-size: 1.2vw;
+        line-height: 1.2vh;
+    }
+}

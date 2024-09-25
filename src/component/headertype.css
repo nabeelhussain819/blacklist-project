@@ -1,0 +1,92 @@
+.headerimgcontrol {
+	position: relative;
+	min-height: 100vh;
+	transition:  0.5s ease;
+  }
+
+.headerTextcontrol{
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	left: 35%;
+}
+.headerTextil{
+	list-style: none;
+  margin:15px 0 15px 0;
+}
+.headerTextil a{
+	color: gray;
+	font-size: 3vw;
+	text-decoration: none;
+	font-family: headerfont;
+}
+.headerTexta:hover li a{
+	color: rgba(255,255,255,.1);
+}
+.headerimgcontrol ul li:hover a{
+	color: #fff;
+	text-shadow: 0 2px 2px rgba(0,0,0,.2);
+}
+@media (max-width: 920px) {
+	.headerTextcontrol{
+		display: none;
+	}
+}
+@media (max-width: 850px) and (min-width:560px) {
+	.headerTextil a{
+		font-size: 1em;
+	}
+	.headerTextcontrol{
+		left: 38%;
+		top: 40%;
+	}
+}
+@media (max-width: 560px) and (min-width:400px) {
+	.headerTextil a{
+		font-size: 1em;
+	}
+	.headerTextcontrol{
+		left: 33%;
+		top: 30%;
+	}
+}
+@media (max-width: 400px) {
+	.headerTextil a{
+		font-size: 1em;
+	}
+	.headerTextcontrol{
+		left: 25%;
+		top: 25%;
+	}
+}
+/* Phone size */
+.phonesize{
+	list-style: none;
+	text-align: left;
+	display: none;
+	margin-left: 25vw;
+	margin-top: 20vh;
+	font-family: headerfont;
+}
+.phonesize li{
+	margin-bottom: 15px;
+}
+.phonesize li a{
+	font-size: 8vw;
+	text-decoration: none;
+	color: gray;
+}
+.phonesize li:hover{
+	list-style:circle;
+	color: white;
+}
+@media (max-width: 920px) {
+	.phonesize{
+		display: block;
+	}
+}
+@media (max-width: 440px) {
+	.phonesize{
+		margin-left: 21vw;		
+	}
+}

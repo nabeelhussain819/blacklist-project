@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@font-face {
+    font-family: headerfont;
+    src: url('./img/headerfont.otf');
+}
+@font-face {
+    font-family: navfont;
+    src: url('./img/Benzin-Regular.ttf');
+}
+
+
+body{
+    background: black;
+    color: white;
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Poppins', sans-serif;
+}

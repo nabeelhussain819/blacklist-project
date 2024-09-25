@@ -1,0 +1,267 @@
+.blog h1{
+text-align: center;
+font-family: headerfont;
+font-size: 3.5vw;
+font-weight: 400;
+letter-spacing: .5vw;
+}
+.blog{
+  margin-bottom: 10%;
+}
+.blog p{
+    text-align: center;
+    font-size: 1.3vw;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.blogimg{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 0 auto; /* Center the container horizontally */
+    width: 80%;
+}
+.blogimg img{
+    border-radius: 3%;
+}
+.bitem1{
+    grid-column: 1 /span 2 ;
+    grid-row: 1 /span 2; 
+    margin: 5px;  
+}
+.bitem2{
+    margin: 5px;  
+}
+.bitem3{
+    margin: 5px;  
+}
+.bitem1,
+.bitem2,
+.bitem3,
+.overlay {
+  text-align: left;
+}
+
+img,
+.overlay {
+  transition: 0.3s all;
+  border-radius: 3px;
+}
+
+.bitem1,
+.bitem2,
+.bitem3 {
+  position: relative;
+}
+
+.bitem1 img,
+.bitem2 img,
+.bitem3 img {
+  width: 100%;
+  margin-bottom: -4px;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.2);
+  opacity: 0;
+}
+
+.bitem1:hover .overlay,
+.bitem2:hover .overlay,
+.bitem3:hover .overlay {
+  opacity: 1;
+}
+.bitem1{
+    .overlay p{
+        margin-left: 6%;
+        font-family: sans-serif;
+        text-align: left;
+        font-size: 15px;
+        padding-top: 50%;
+    }
+    .overlay h2{
+      font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      width: 70%;
+      font-size: 3vw;
+      margin-left: 6%;
+      line-height: 49px;
+      letter-spacing: 2px;
+    }
+}
+.overlay p{
+    margin-left: 6%;
+    font-family: sans-serif;
+    text-align: left;
+    font-size: 1vw;
+    padding-top: 50%;
+}
+.overlay h2{
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  width: 20%;
+  font-size: 1vw;
+  margin-left: 6%;
+  line-height: 23px;
+  letter-spacing: 2px;
+}
+    .bcontent{
+        display: flex;
+    }
+    .bcontent h6{
+        width:90% ;
+        font-size: 1vw;
+        margin:0 6% 0 6%;
+        font-family: sans-serif;
+        font-weight: 100;
+    }
+    
+    @media screen and (max-width: 13078px) and (min-width: 900px) {
+      .blog h1{
+        font-size: 33px;
+        font-weight: 300;
+        letter-spacing: 3px;
+        }
+        .bitem1{
+            .overlay p{
+                margin-left: 6%;
+                font-size: 15px;
+                padding-top: 47%;
+            }
+            .overlay h2{
+              width:35vw;
+              font-size: 3.5vw;
+              margin-left: 6%;
+              line-height: 3.5vw;
+              letter-spacing: 2px;
+            }
+        }
+        .overlay p{
+            margin-left: 6%;
+            font-size: 10px;
+            padding-top: 55%;
+        }
+        .overlay h2{
+          font-size: 1.5vw;
+          margin-left: 6%;
+          line-height: 1.8vw;
+          letter-spacing: 1.5px;
+        }
+
+    }
+
+    @media screen and (max-width: 900px) and (min-width: 740px) {
+      .blog h1{
+        font-size: 20px;
+        font-weight: 300;
+        letter-spacing: 2px;
+        }
+        .bitem1{
+            .overlay p{
+                margin-left: 6%;
+                font-size: 8px;
+                padding-top: 45%;
+            }
+            .overlay h2{
+              width: 70%;
+              font-size: 1.5rem;
+              margin-left: 6%;
+              line-height: 30px;
+              letter-spacing: 1.2 px;
+            }
+        }
+        .overlay p{
+            margin-left: 6%;
+            font-size: 5px;
+            padding-top: 45%;
+        }
+        .overlay h2{
+          font-size: 12px;
+          margin-left: 6%;
+          line-height: 15px;
+          letter-spacing: 1.2px;
+        }
+            .bcontent h6{
+                width:90% ;
+                font-size: 8px;
+                margin:0 6% 0 6%;
+                font-weight: 100;
+            }
+    }
+
+    @media screen and (max-width: 749px) and (min-width: 560px) {
+      .blog h1{
+        font-size: 20px;
+        font-weight: 300;
+        letter-spacing: 2px;
+        }
+        .bitem1{
+            .overlay p{
+                margin-left: 6%;
+                font-size: 1vw;
+                padding-top: 55%;
+            }
+            .overlay h2{
+              width: 50%;
+              font-size: 2vw;
+              margin-left: 6%;
+              line-height: 20px;
+              letter-spacing: 1.2 px;
+            }
+        }
+        .overlay p{
+            margin-left: 6%;
+            font-size: 1vw;
+            padding-top: 45%;
+        }
+        .overlay h2{
+          font-size: 1.5vw;
+          margin-left: 6%;
+          line-height: 12px;
+          letter-spacing: 1.2px;
+        }
+            .bcontent h6{
+                width:90% ;
+                font-size: .9vw;
+                margin:0 6% 0 6%;
+                font-weight: 100;
+            }
+    }
+    @media screen and (max-width: 560px) and (min-width: 30px) {
+      .blog h1{
+        font-size: 20px;
+        font-weight: 300;
+        letter-spacing: 2px;
+        }
+        .bitem1{
+            .overlay p{
+                margin-left: 6%;
+                font-size: 1vw;
+                padding-top: 55%;
+            }
+            .overlay h2{
+              width: 70%;
+              font-size: 2.5vw;
+              margin-left: 6%;
+              line-height: 2.5vw;
+              letter-spacing: 1.2 px;
+            }
+        }
+        .overlay p{
+            margin-left: 6%;
+            font-size: 1vw;
+            padding-top: 45%;
+        }
+        .overlay h2{
+          font-size: 1vw;
+          margin-left: 6%;
+          line-height: 7px;
+          letter-spacing: .5px;
+        }
+            .bcontent h6{
+                width:100% ;
+                font-size: .5vw;
+                margin:0 6% 0 6%;
+            }
+    }
